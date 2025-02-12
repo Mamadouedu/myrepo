@@ -8,7 +8,6 @@ public class GestionEtudiants {
     private ArrayList<Etudiant> listeEtudiants = new ArrayList<>();
     private Scanner scanner = new Scanner(System.in);
 
-    // Méthode pour ajouter un étudiant
     public void ajouterEtudiant() {
         System.out.print("Nom : ");
         String nom = scanner.nextLine();
@@ -16,10 +15,10 @@ public class GestionEtudiants {
         int age = 0;
         try {
             age = scanner.nextInt();
-            scanner.nextLine(); // Consommer le retour à la ligne
+            scanner.nextLine(); 
         } catch (Exception e) {
             System.out.println("Veuillez entrer un âge valide.");
-            scanner.nextLine(); // Pour consommer l'entrée invalide
+            scanner.nextLine();
             return;
         }
         System.out.print("Filière : ");
@@ -29,7 +28,6 @@ public class GestionEtudiants {
         System.out.println("Étudiant ajouté avec succès !");
     }
 
-    // Méthode pour afficher la liste des étudiants
     public void afficherEtudiants() {
         if (listeEtudiants.isEmpty()) {
             System.out.println("Aucun étudiant enregistré.");
@@ -41,7 +39,6 @@ public class GestionEtudiants {
         }
     }
 
-    // Méthode pour supprimer un étudiant par son nom
     public void supprimerEtudiant() {
         System.out.print("Entrez le nom de l'étudiant à supprimer : ");
         String nom = scanner.nextLine();

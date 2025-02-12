@@ -18,10 +18,10 @@ public class Main {
             int choix = 0;
             try {
                 choix = scanner.nextInt();
-                scanner.nextLine(); // Pour consommer le retour à la ligne
+                scanner.nextLine(); 
             } catch (Exception e) {
                 System.out.println("Veuillez entrer un nombre valide.");
-                scanner.nextLine(); // Pour consommer l'entrée invalide
+                scanner.nextLine();
                 continue;
             }
 
@@ -45,4 +45,4 @@ public class Main {
             }
         }
     }
-}
+}1

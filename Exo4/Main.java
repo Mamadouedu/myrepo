@@ -8,7 +8,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
 
         while (true) {
-            System.out.println("\n=== Menu ===");
+            System.out.println("\n===Que voulez vous faire===");
             System.out.println("1. Ajouter un étudiant");
             System.out.println("2. Afficher la liste des étudiants");
             System.out.println("3. Supprimer un étudiant par son nom");
